@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Vector.png">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <title>ROZALIN Store</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <section class="nav-bar">
+                <img src="WhatsApp Image 2026-08-30 at 00.44.13 1 [Vectorized].png" alt="Logo" class="logo">
+            </section>
+            <div class="header-buttons">
+                <nav class="buttons-container">
+                    <button class="create-btn">انشاء حساب</button>
+                    <button class="sign-in-btn">تسجيل الدخول</button>
+                </nav>
+                <nav class="logo-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </nav>
+            </div>
+            <nav class="header-nav">
+                    <a href="#">الاكسسوارات</a>
+                    <a href="#">Kids</a>
+                    <a href="#">العروض والخصومات</a>
+                    <a href="#">مستحضرات التجميل</a>
+                    <a href="#">التقييمات</a>
+                    <a href="#">الشكاوى والاقتراحات</a>
+                </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="details">
+            <section class="recent">
+                <section class="txt">
+                    <nav class="more">
+                         <i class="fa-solid fa-arrow-left-long"></i>
+                         <a class="more" href="#">عرض المزيد</a>
+                    </nav>
+                    <h3>وصل حديثا</h3>
+                </section>
+                <section class="recent-items">
+                    <div class="items-list" id="product-list">
+                    </div>
+                    <div id="productModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img id="modal-img" src="">
+                            <a href="#" id="modal-name"></a>
+                            <p id="modal-price"></p>
+                            <button class="btn-order" onclick="orderProduct()">أضف الى العربة</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="accesories">
+                <section class="txt">
+                    <nav class="more">
+                         <i class="fa-solid fa-arrow-left-long"></i>
+                         <a class="more" href="#">عرض المزيد</a>
+                    </nav>
+                    <h3>الاكسسوارات</h3>
+                </section>
+                <section class="recent-items">
+                    <div class="items-list" id="product-list">
+                    </div>
+                    <div id="productModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img id="modal-img" src="">
+                            <a href="#" id="modal-name"></a>
+                            <p id="modal-price"></p>
+                            <button class="btn-order" onclick="orderProduct()">أضف الى العربة</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="beauty">
+                <section class="txt">
+                    <nav class="more">
+                         <i class="fa-solid fa-arrow-left-long"></i>
+                         <a class="more" href="#">عرض المزيد</a>
+                    </nav>
+                    <h3>مستحضرات التجميل</h3>
+                </section>
+                <section class="recent-items">
+                    <div class="items-list" id="product-list">
+                    </div>
+                    <div id="productModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img id="modal-img" src="">
+                            <a href="#" id="modal-name"></a>
+                            <p id="modal-price"></p>
+                            <button class="btn-order" onclick="orderProduct()">أضف الى العربة</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="offers">
+                <section class="txt">
+                    <nav class="more">
+                         <i class="fa-solid fa-arrow-left-long"></i>
+                         <a class="more" href="#">عرض المزيد</a>
+                    </nav>
+                    <h3>العروض والخصومات</h3>
+                </section>
+                <section class="recent-items">
+                    <div class="items-list" id="product-list">
+                    </div>
+                    <div id="productModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img id="modal-img" src="">
+                            <a href="#" id="modal-name"></a>
+                            <p id="modal-price"></p>
+                            <button class="btn-order" onclick="orderProduct()">أضف الى العربة</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="info">
+            <section class="soc-privacy">
+                <div class="container-footer">
+                    <nav class="info-priv">
+                        <h3 class="inform">معلومات</h3>
+                        <nav class="nav-info"> 
+                            <a href="#">عن ROZALIN</a>
+                            <a href="#">سياسة الخصوصية</a>
+                            <a href="#">سياسة الاستبدال والاسترجاع</a>
+                            <a href="#">سياسة التسوق</a>
+                            <a href="#">تواصل معنا</a>
+                        </nav>
+                    </nav>
+                    <nav class="social">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </nav>
+                </div>
+            </section>
+            <nav class="copyright">
+                    <small>&copy; 2026, ROZALIN</small>
+                </nav>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
