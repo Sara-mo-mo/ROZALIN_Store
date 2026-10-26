@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول | ROZALIN</title>
+    <link rel="icon" href="Vector.png">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="auth-header">
+        <a href="index.html" class="brand">
+            <img src="WhatsApp Image 2026-08-30 at 00.44.13 1 [Vectorized].png"
+                 alt="ROZALIN">
+        </a>
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            العودة للمتجر
+        </a>
+    </header>
+
+    <main class="auth-page">
+        <section class="auth-card">
+            <div class="auth-decoration">
+                <div class="decoration-circle circle-one"></div>
+                <div class="decoration-circle circle-two"></div>
+                <i class="fa-solid fa-heart"></i>
+                <h2>أهلًا بكِ في ROZALIN</h2>
+                <p>اختاري ما يعبر عنكِ، واجعلي كل تفاصيلك أجمل.</p>
+                <span class="decoration-caption">Beauty in every detail</span>
+            </div>
+
+            <div class="auth-form-area">
+                <a href="index.html" class="mobile-brand">ROZALIN</a>
+
+                <div class="form-heading">
+                    <span class="heading-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <h1>تسجيل الدخول</h1>
+                    <p>سعداء بعودتكِ! أدخلي بياناتك للمتابعة.</p>
+                </div>
+
+                <div id="authMessage" class="auth-message"
+                     role="status" aria-live="polite" hidden></div>
+
+                <form id="loginForm" novalidate>
+                    <label for="loginEmail">البريد الإلكتروني</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="loginEmail"
+                               name="email" placeholder="name@example.com"
+                               autocomplete="email" required>
+                    </div>
+                    <small class="field-error" id="emailError"></small>
+
+                    <label for="loginPassword">كلمة المرور</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="loginPassword"
+                               name="password" placeholder="أدخلي كلمة المرور"
+                               autocomplete="current-password" required>
+                        <button class="toggle-password" type="button"
+                                data-target="loginPassword"
+                                aria-label="إظهار كلمة المرور">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <small class="field-error" id="passwordError"></small>
+
+                    <div class="form-options">
+                        <label class="remember-option">
+                            <input type="checkbox" id="rememberMe">
+                            <span>تذكريني</span>
+                        </label>
+                        <a href="#" id="forgotPassword">نسيتِ كلمة المرور؟</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        تسجيل الدخول
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </form>
+
+                <div class="form-divider"><span>أو</span></div>
+
+                <button type="button" class="social-btn" id="googleLogin">
+                    <i class="fa-brands fa-google"></i>
+                    المتابعة باستخدام Google
+                </button>
+
+                <p class="switch-auth">
+                    ليس لديكِ حساب؟
+                    <a href="signup.html">إنشاء حساب جديد</a>
+                </p>
+
+                <p class="terms-note">
+                    بالمتابعة، أنتِ توافقين على شروط استخدام المتجر.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="auth-footer">
+        <p>© 2026 ROZALIN — كل الحقوق محفوظة</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

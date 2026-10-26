@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب | ROZALIN</title>
+    <link rel="icon" href="Vector.png">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="auth-header">
+        <a href="index.html" class="brand">
+            <img src="WhatsApp Image 2026-08-30 at 00.44.13 1 [Vectorized].png"
+                 alt="ROZALIN">
+        </a>
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            العودة للمتجر
+        </a>
+    </header>
+
+    <main class="auth-page">
+        <section class="auth-card signup-card">
+            <div class="auth-decoration">
+                <div class="decoration-circle circle-one"></div>
+                <div class="decoration-circle circle-two"></div>
+                <i class="fa-solid fa-gift"></i>
+                <h2>انضمي إلى ROZALIN</h2>
+                <p>أنشئي حسابك واكتشفي مجموعتنا من الإكسسوارات ومستحضرات التجميل.</p>
+                <span class="decoration-caption">Your style, your story</span>
+            </div>
+
+            <div class="auth-form-area">
+                <a href="index.html" class="mobile-brand">ROZALIN</a>
+
+                <div class="form-heading">
+                    <span class="heading-icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </span>
+                    <h1>إنشاء حساب جديد</h1>
+                    <p>املئي البيانات التالية للانضمام إلينا.</p>
+                </div>
+
+                <div id="authMessage" class="auth-message"
+                     role="status" aria-live="polite" hidden></div>
+
+                <form id="signupForm" novalidate>
+                    <label for="fullName">الاسم بالكامل</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="fullName" name="name"
+                               placeholder="اكتبي اسمك بالكامل"
+                               autocomplete="name" required minlength="3">
+                    </div>
+                    <small class="field-error" id="nameError"></small>
+
+                    <label for="signupEmail">البريد الإلكتروني</label>
+                    <div class="input-wrap">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="signupEmail" name="email"
+                               placeholder="name@example.com"
+                               autocomplete="email" required>
+                    </div>
+                    <small class="field-error" id="emailError"></small>
+
+                    <label for="signupPassword">كلمة المرور</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="signupPassword"
+                               name="password" placeholder="8 أحرف على الأقل"
+                               autocomplete="new-password"
+                               minlength="8" required>
+                        <button class="toggle-password" type="button"
+                                data-target="signupPassword"
+                                aria-label="إظهار كلمة المرور">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <small class="field-error" id="passwordError"></small>
+
+                    <label for="confirmPassword">تأكيد كلمة المرور</label>
+                    <div class="input-wrap">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="confirmPassword"
+                               name="confirmPassword"
+                               placeholder="أعيدي كتابة كلمة المرور"
+                               autocomplete="new-password" required>
+                        <button class="toggle-password" type="button"
+                                data-target="confirmPassword"
+                                aria-label="إظهار تأكيد كلمة المرور">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                    <small class="field-error" id="confirmPasswordError"></small>
+
+                    <label class="terms-check">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <span>
+                            أوافق على
+                            <a href="index.html#contact">شروط الاستخدام وسياسة الخصوصية</a>
+                        </span>
+                    </label>
+                    <small class="field-error" id="termsError"></small>
+
+                    <button type="submit" class="submit-btn">
+                        إنشاء الحساب
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                </form>
+
+                <p class="switch-auth">
+                    لديكِ حساب بالفعل؟
+                    <a href="login.html">تسجيل الدخول</a>
+                </p>
+
+                <p class="terms-note">
+                    بيانات التسجيل هنا تجريبية؛ يلزم خادم آمن لتفعيل الحسابات الحقيقية.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="auth-footer">
+        <p>© 2026 ROZALIN — كل الحقوق محفوظة</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>
