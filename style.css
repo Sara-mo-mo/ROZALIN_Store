@@ -254,8 +254,6 @@ input:focus-visible,
     font-size: 18px;
 }
 
-/* Main sections */
-
 .details {
     width: 83.5%;
     max-width: 1200px;
@@ -377,8 +375,6 @@ input:focus-visible,
     border-radius: 10px;
 }
 
-/* Toast notification */
-
 .toast {
     position: fixed;
     top: 20px;
@@ -415,8 +411,6 @@ input:focus-visible,
     visibility: visible;
     transform: translateY(0);
 }
-
-/* Product and cart modals */
 
 .modal {
     position: fixed;
@@ -494,8 +488,6 @@ input:focus-visible,
 .btn-order:hover {
     background: var(--accent-dark);
 }
-
-/* Shopping cart contents */
 
 .cart-modal-content {
     max-width: 480px;
@@ -577,8 +569,6 @@ input:focus-visible,
     color: var(--muted);
 }
 
-/* Footer */
-
 footer {
     width: 83.5%;
     max-width: 1200px;
@@ -650,8 +640,6 @@ footer {
     font-size: 14px;
 }
 
-/* Tablet */
-
 @media (min-width: 600px) and (max-width: 900px) {
     .details,
     footer {
@@ -676,8 +664,6 @@ footer {
         gap: 14px 18px;
     }
 }
-
-/* Mobile */
 
 @media (max-width: 599px) {
     .top-logo {
